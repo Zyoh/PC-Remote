@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title>Hotkey</title>
+	<style>
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	box-sizing: border-box;
+	border: 1em solid white;
+}
+
+.hotkey {
+	width: 100%;
+	height: 100%;
+
+	background-color: #FF3045;
+	border: none;
+
+	color: white;
+	font-size: 8em;
+
+	transition: 0.2s;
+}
+.hotkey:hover {
+	background-color: #FF6090;
+}
+.hotkey:active {
+	background-color: #FF4560;
+}
+
+	</style>
+</head>
+<body>
+	<form method="post">
+		<div class="container">
+			<button class="hotkey" name="primary" type="submit"  >第一次</button>
+			<br>
+			<button class="hotkey" name="secondary" type="submit">第二次</button>
+		</div>
+	</form>
+</body>
+</html>
